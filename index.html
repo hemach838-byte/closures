@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closures</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Score Tracker</h2>
+      <p>Current Score: <span id="score">0</span></p>
+      <input type="number" id="points" placeholder="Enter points to add" />
+      <div class="buttons">
+        <button onclick="addScore()">Add</button>
+        <button onclick="subtractScore()">Subtract</button>
+        <button onclick="resetScore()">Reset</button>
+      </div>
+      <p id="message"></p>
+      <div class="history">
+        <h3>History</h3>
+        <button class="clear-history" onclick="clearHistory()">
+          Clear History
+        </button>
+      </div>
+
+      <ul id="history"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
