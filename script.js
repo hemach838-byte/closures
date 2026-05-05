@@ -58,11 +58,13 @@ function updateUI(message = "") {
 }
 function addScore() {
   const points = Number(document.getElementById("points").value);
+   document.getElementById("points").value = "";
   const msg = scoreManager.add(points);
   updateUI(msg);
 }
 function subtractScore() {
   const points = Number(document.getElementById("points").value);
+   document.getElementById("points").value = "";
   const msg = scoreManager.subtract(points);
   updateUI(msg);
 }
