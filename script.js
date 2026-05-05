@@ -1,5 +1,5 @@
 function createCounter() {
-  let score = JSON.parse(localStorage.getItem("score")) || 0;
+  let score = Number(JSON.parse(localStorage.getItem("score")) )|| 0;
   let history = JSON.parse(localStorage.getItem("history")) || [];
   function save() {
     localStorage.setItem("score", JSON.stringify(score));
