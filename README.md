@@ -1,4 +1,4 @@
-# 🚀 Score Tracker App
+# 🚀 Score Tracker 
 
 A simple and interactive Score Tracker built using **JavaScript Closures** and **Local Storage**, with a clean UI and persistent data.
 
